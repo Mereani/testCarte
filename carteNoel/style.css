@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+*{
+    font-family: 'Caveat', cursive;
+}
+
+
+/*        REVOIR LES WEBKIT       */
+body{
+        display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: coral;
+    background-size: cover;
+    /* display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox; */
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    color: #7F0000;
+}
+
+/*        ANIMATION SNOW       */
+
+
+/* .flocon{
+    color: white;
+    font-size: 1em;
+    animation: neige ;
+} */
+
+
+
+
+
+
+
+.flocon{
+    animation: neige1 1s linear infinite alternate;
+    color: white;
+    font-size: 1em;
+
+}
+
+.flocon::after{
+    content: '';
+    position: absolute;
+    background-repeat: repeat;
+    width: 100%;
+    height: 640px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2000px;
+    animation: neige 10s linear infinite;
+
+}
+@keyframes neige {
+    from {
+        transform: translateY(200vh);
+    }
+}
+@keyframes neige1 {
+    to {
+        transform: translateX(50px);
+    }
+} 
